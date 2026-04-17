@@ -1,32 +1,32 @@
 /* ========================================
-   あさひ動物病院 - スタイルシート
+   テスト医院 - スタイルシート
    ======================================== */
 
 /* CSS Variables */
 :root {
-    /* Colors - Orange Theme for Asahi Animal Hospital */
-    --color-primary: #E67635;
-    --color-primary-light: #F28B4C;
-    --color-primary-dark: #C45E20;
-    --color-secondary: #FF9F5A;
-    --color-secondary-light: #FFD4B8;
-    --color-accent: #D4652B;
-    
-    --color-text: #3D3028;
-    --color-text-light: #6B5D52;
-    --color-text-muted: #9A8B7F;
-    
-    --color-bg: #FFFCF9;
-    --color-bg-alt: #FFF5ED;
-    --color-bg-dark: #FFE8D9;
-    
+    /* Colors - Blue/Teal Theme for Pediatric Clinic */
+    --color-primary: #2B9EB3;
+    --color-primary-light: #47B8CB;
+    --color-primary-dark: #1D7A8A;
+    --color-secondary: #5CC8D8;
+    --color-secondary-light: #C2EDF3;
+    --color-accent: #F5A623;
+
+    --color-text: #2D4A5C;
+    --color-text-light: #4A6A7E;
+    --color-text-muted: #7A9BAD;
+
+    --color-bg: #F4FBFD;
+    --color-bg-alt: #E8F7FA;
+    --color-bg-dark: #C2EDF3;
+
     --color-white: #FFFFFF;
     --color-black: #1A1A1A;
-    
+
     /* Typography */
     --font-primary: 'Noto Sans JP', sans-serif;
-    --font-display: 'Playfair Display', serif;
-    
+    --font-display: 'Zen Kaku Gothic New', sans-serif;
+
     /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -34,18 +34,18 @@
     --space-lg: 4rem;
     --space-xl: 6rem;
     --space-xxl: 8rem;
-    
+
     /* Border Radius */
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 16px;
     --radius-xl: 24px;
-    
+
     /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(230, 118, 53, 0.08);
-    --shadow-md: 0 4px 16px rgba(230, 118, 53, 0.12);
-    --shadow-lg: 0 8px 32px rgba(230, 118, 53, 0.16);
-    
+    --shadow-sm: 0 2px 8px rgba(43, 158, 179, 0.08);
+    --shadow-md: 0 4px 16px rgba(43, 158, 179, 0.12);
+    --shadow-lg: 0 8px 32px rgba(43, 158, 179, 0.18);
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
@@ -114,9 +114,9 @@ button {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 252, 249, 0.95);
+    background: rgba(244, 251, 253, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(230, 118, 53, 0.1);
+    border-bottom: 1px solid rgba(43, 158, 179, 0.12);
     transition: var(--transition-normal);
 }
 
@@ -145,7 +145,7 @@ button {
     font-family: var(--font-display);
     font-size: 0.65rem;
     color: var(--color-text-muted);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
 }
 
 .nav-desktop {
@@ -308,10 +308,10 @@ button {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, 
-        rgba(255, 252, 249, 0.92) 0%, 
-        rgba(255, 245, 237, 0.88) 50%,
-        rgba(255, 212, 184, 0.85) 100%
+    background: linear-gradient(135deg,
+        rgba(244, 251, 253, 0.93) 0%,
+        rgba(232, 247, 250, 0.88) 50%,
+        rgba(194, 237, 243, 0.82) 100%
     );
     z-index: -1;
 }
@@ -323,7 +323,7 @@ button {
     right: -20%;
     width: 80%;
     height: 150%;
-    background: radial-gradient(ellipse, rgba(230, 118, 53, 0.15) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(43, 158, 179, 0.12) 0%, transparent 70%);
     animation: float 20s ease-in-out infinite;
     z-index: 1;
 }
@@ -335,7 +335,7 @@ button {
     left: -10%;
     width: 60%;
     height: 100%;
-    background: radial-gradient(ellipse, rgba(255, 159, 90, 0.1) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(245, 166, 35, 0.08) 0%, transparent 70%);
     animation: float 15s ease-in-out infinite reverse;
     z-index: 1;
 }
@@ -772,6 +772,8 @@ section {
     font-weight: 700;
     color: var(--color-text);
     margin-bottom: var(--space-xs);
+    padding-left: 0.8rem;
+    border-left: 3px solid var(--color-primary);
 }
 
 .service-content p {
@@ -868,6 +870,8 @@ section {
     font-size: 1.5rem;
     color: var(--color-primary);
     transition: var(--transition-fast);
+    flex-shrink: 0;
+    margin-left: var(--space-sm);
 }
 
 .faq-item.active .faq-icon {
@@ -932,6 +936,11 @@ section {
 .access-card dd {
     color: var(--color-text-light);
     margin-bottom: var(--space-sm);
+}
+
+.access-card dd small {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
 }
 
 .access-card a {
@@ -1117,31 +1126,31 @@ section {
     .pc-only {
         display: inline;
     }
-    
+
     .hero-buttons {
         flex-direction: row;
     }
-    
+
     .features-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .doctor-content {
         grid-template-columns: 1fr 1.5fr;
     }
-    
+
     .access-content {
         grid-template-columns: 1fr 1.5fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .footer-nav ul {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1154,19 +1163,19 @@ section {
     .hamburger {
         display: none;
     }
-    
+
     .nav-desktop {
         display: block;
     }
-    
+
     .header-contact {
         display: block;
     }
-    
+
     .services-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     section {
         padding: var(--space-xxl) 0;
     }
@@ -1185,4 +1194,3 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
-
