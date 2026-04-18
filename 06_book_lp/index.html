@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>不労所得マシンの作り方【続編】無料プレゼント｜北村拓也</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="email=no,telephone=no,address=no" />
+
+<style>
+/* ===== reset ===== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input{margin:0;padding:0;background:none;border:none;border-radius:0;outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}img{vertical-align:top}
+
+/* ===== style.css  ===== */
+*,*::before,*::after{box-sizing:border-box}
+body{font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",hiragino-kaku-gothic-pron,Meiryo,"Helvetica Neue",Arial,sans-serif;line-height:1.6;color:#192b60;font-size:22px;letter-spacing:.05em}
+@media screen and (max-width:600px){body{font-size:max(3.5416666667vw,17px);line-height:1.5}}
+img,source,picture{display:block;max-width:100%;height:auto}
+.lp_block img{width:100%}
+::selection{color:#192b60;background-color:#fffc95}
+a{color:inherit;text-decoration:none}
+
+.lp_block_box,.lp_block_faq_answer,.lp_block_achievement_item,.lp_block_profile_item{background-color:#fff;background-image:radial-gradient(circle,#e9ecf2 1.5px,transparent 1.5px),radial-gradient(circle,#e9ecf2 1.5px,transparent 1.5px);background-position:0 0,10.5px 11px;background-size:21px 24px}
+@media screen and (max-width:600px){.lp_block_box,.lp_block_faq_answer,.lp_block_achievement_item,.lp_block_profile_item{background-image:radial-gradient(circle,#e9ecf2 .75px,transparent .75px),radial-gradient(circle,#e9ecf2 .75px,transparent .75px);background-position:0 0,4.75px 5.5px;background-size:9.5px 11px}}
+
+.lp_block{margin-inline:auto;padding:50px 15px;width:100%;max-width:1030px}
+@media screen and (max-width:600px){.lp_block{padding:7.2916666667vw 3.125vw}}
+
+.lp_block_fv{padding:0;max-width:none;background-color:#192b60;text-align:center}
+.lp_block_fv picture{margin-inline:auto}
+.lp_block_fv img{max-width:1050px;width:100%;margin-inline:auto}
+
+.lp_block_profile{padding-top:40px}
+@media screen and (max-width:600px){.lp_block_profile{padding-top:5.7291666667vw}}
+.lp_block_profile_container{display:flex;gap:20px}
+@media screen and (max-width:600px){.lp_block_profile_container{flex-direction:column;gap:3.125vw}}
+.lp_block_profile_container p{font-weight:500}
+.lp_block_profile_item{justify-content:space-between;border:3px solid #192b60;border-radius:20px}
+@media screen and (max-width:600px){.lp_block_profile_item{border-width:2px;border-radius:2.0833333333vw}}
+.lp_block_profile_item_main{padding:50px;flex-basis:100%}
+@media screen and (max-width:600px){.lp_block_profile_item_main{padding:4.1666666667vw 5.2083333333vw 5.2083333333vw}}
+.lp_block_profile_item_main h3{font-weight:700;font-size:28px;margin-bottom:40px}
+@media screen and (max-width:600px){.lp_block_profile_item_main h3{font-size:max(5vw,19px);margin-bottom:2.6041666667vw;letter-spacing:normal}}
+.lp_block_profile_item_main p{font-size:20px;line-height:1.8;text-align:justify}
+@media screen and (max-width:600px){.lp_block_profile_item_main p{font-size:max(3.6458333333vw,17px);font-weight:400;line-height:1.9}}
+.lp_block_profile_item_main p+p{margin-top:30px}
+@media screen and (max-width:600px){.lp_block_profile_item_main p+p{margin-top:4.1666666667vw}}
+.lp_block_profile_item_main p:last-of-type{margin-bottom:50px}
+@media screen and (max-width:600px){.lp_block_profile_item_main p:last-of-type{margin-bottom:5.5208333333vw}}
+.lp_block_profile_item_main picture{margin-inline:auto}
+@media screen and (max-width:600px){.lp_block_profile_item_main img{display:block;margin-inline:auto;max-width:56.25vw}}
+
+.lp_block_achievement_container{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1030px;margin-inline:auto;margin-bottom:20px}
+@media screen and (max-width:600px){.lp_block_achievement_container{justify-content:space-between;gap:3.125vw;margin-bottom:3.125vw}}
+.lp_block_achievement_item{border:3px solid #192b60;border-radius:20px;overflow:hidden}
+@media screen and (min-width:600px){.lp_block_achievement_item{max-width:320px}}
+@media screen and (max-width:600px){.lp_block_achievement_item{border-width:2px;border-radius:2.0833333333vw;width:45.3125vw}.lp_block_achievement_item:last-child{margin-inline:auto}}
+.lp_block_achievement_row img{border:3px solid #192b60;border-radius:20px}
+@media screen and (max-width:600px){.lp_block_achievement_row img{border-width:2px;border-radius:2.0833333333vw}}
+
+.lp_block_details{padding:50px 47px}
+@media screen and (max-width:600px){.lp_block_details{padding:5.2083333333vw 4.8958333333vw}}
+.lp_block_details_item{display:flex}
+.lp_block_details_item::before{content:"";width:20px;background-color:#192b60;flex-shrink:0;border-radius:1000px}
+@media screen and (max-width:600px){.lp_block_details_item::before{width:2.0833333333vw}}
+.lp_block_details_item+.lp_block_details_item{margin-top:40px}
+@media screen and (max-width:600px){.lp_block_details_item+.lp_block_details_item{margin-top:7.2916666667vw}}
+.lp_block_details_text{padding-left:30px;margin-top:-10px;margin-bottom:-6px}
+@media screen and (max-width:600px){.lp_block_details_text{padding-left:3.5416666667vw;margin-top:-.1041666667vw;margin-bottom:-.1041666667vw}}
+.lp_block_details h3{display:flex;column-gap:1em;font-size:36px;font-weight:800;margin-bottom:16px}
+@media screen and (max-width:600px){.lp_block_details h3{font-size:max(4.5833333333vw,21px);line-height:1.4;margin-bottom:3.125vw}}
+.lp_block_details h3 span:first-child{flex-shrink:0}
+.lp_block_details ul{list-style-type:none}
+.lp_block_details ul li{display:flex;font-weight:600;align-items:start;line-height:1.4}
+.lp_block_details ul li::before{display:inline-block;content:"";width:6px;height:6px;background-color:#192b60;border-radius:1000px;margin-right:10px;margin-top:.6em;flex-shrink:0}
+.lp_block_details ul li+li{margin-top:20px}
+@media screen and (max-width:600px){.lp_block_details ul li+li{margin-top:2.6041666667vw}}
+
+.lp_block_bg_green{background-color:#e6f5e8}
+.lp_block_message_section{background-color:#e6f5e8;padding:60px 15px}
+@media screen and (max-width:600px){.lp_block_message_section{padding:7.3vw 3.1vw}}
+.message-card{max-width:900px;margin:0 auto;background:#fff;border:3px solid #8bba8f;border-radius:20px;padding:60px 50px;text-align:center}
+@media screen and (max-width:600px){.message-card{padding:7.3vw 5.2vw;border-width:2px;border-radius:2.08vw}}
+.message-card .msg-heading{font-size:32px;font-weight:900;color:#192b60;line-height:1.5;margin-bottom:40px}
+.message-card .msg-heading em{font-style:normal;background:linear-gradient(transparent 50%,#fffc95 50%);padding:0 2px}
+@media screen and (max-width:600px){.message-card .msg-heading{font-size:max(5.5vw,22px);margin-bottom:5.2vw}}
+.message-card p{font-size:20px;font-weight:500;line-height:2;text-align:center;margin-bottom:30px}
+@media screen and (max-width:600px){.message-card p{font-size:max(3.6vw,16px);margin-bottom:4.2vw}}
+.message-card p:last-child{margin-bottom:0}
+.message-card p strong{font-weight:800;color:#192b60}
+.lp_block_bg_green h2{color:#2d7a3a}
+.lp_block_bg_green h2::before{border-top-color:#fff}
+.lp_block_bg_green h2::after{border-top-color:#2d7a3a}
+.lp_block_faq.lp_block_box{background:#2d7a3a}
+.lp_block_bg_green .lp_block_faq.lp_block_box{border-color:#2d7a3a}
+.lp_block_faq_question{position:relative;display:flex;align-items:center;column-gap:25px;color:#fff;font-size:24px;font-weight:700;padding:16px 50px 15px;text-align:justify}
+@media screen and (max-width:600px){.lp_block_faq_question{padding:4.1666666667vw;font-size:max(3.6458333333vw,19px);column-gap:2.6041666667vw;line-height:1.4}}
+.lp_block_faq_question img{height:56px;width:56px}
+@media screen and (max-width:600px){.lp_block_faq_question img{height:45px;width:45px}}
+.lp_block_faq_answer{padding:29px 50px;font-weight:400;text-align:justify}
+@media screen and (max-width:600px){.lp_block_faq_answer{padding:4.1666666667vw 5.2083333333vw;line-height:1.7}}
+
+.lp_block_form{margin:0 auto;max-width:none;text-align:center}
+@media screen and (max-width:600px){.lp_block_form{line-height:1.3}}
+.lp_block_form small{font-size:18px;font-weight:400}
+@media screen and (max-width:600px){.lp_block_form small{font-size:max(3.3333333333vw,14px)}}
+.lp_block_form_first{padding-bottom:40px}
+@media screen and (max-width:600px){.lp_block_form_first{padding-bottom:5.2083333333vw}}
+.lp_block_form_last{padding-bottom:70px}
+@media screen and (max-width:600px){.lp_block_form_last{padding-bottom:5.2083333333vw}}
+
+/* LINE CTA */
+.cta-line-btn{display:flex;align-items:center;justify-content:center;gap:14px;max-width:830px;margin:0 auto 8px;padding:22px 32px;height:100px;background:#06C755;border:5px solid #192b60;outline:5px solid #fffc95;color:#fff;font-size:32px;font-weight:900;letter-spacing:.05em;text-decoration:none;transition:opacity .3s}
+.cta-line-btn:hover{opacity:.85}
+@media screen and (max-width:600px){.cta-line-btn{height:16.6666666667vw;font-size:max(4.5vw,20px);gap:10px;padding:16px 20px;border-width:3px;outline-width:3px}}
+.cta-line-btn svg{flex-shrink:0}
+.form-title{font-size:28px;font-weight:800;margin-bottom:20px;text-align:center;color:#192b60;line-height:1.4}
+.form-title span{background:linear-gradient(transparent 60%,#fffc95 60%);padding:0 4px}
+.form-title::before{content:"＼ ";font-weight:400}
+.form-title::after{content:" ／";font-weight:400}
+@media screen and (max-width:600px){.form-title{font-size:max(4.5vw,19px);margin-bottom:3.125vw}}
+.form-subtitle{font-size:22px;font-weight:800;text-align:center;color:#192b60;margin-bottom:16px}
+@media screen and (max-width:600px){.form-subtitle{font-size:max(3.8vw,16px);margin-bottom:2.6vw}}
+
+.lp_block_footer{display:flex;flex-direction:column;row-gap:50px;max-width:none;background-color:#192b60;font-size:16px;color:#fff}
+@media screen and (max-width:600px){.lp_block_footer{font-size:max(2.6041666667vw,13px);row-gap:10.4166666667vw}}
+.lp_block_footer ul{display:flex;justify-content:center}
+@media screen and (max-width:600px){.lp_block_footer ul{flex-direction:column}}
+.lp_block_footer ul li{padding-inline:10px}
+@media screen and (max-width:600px){.lp_block_footer ul li{text-align:center}}
+.lp_block_footer ul li+li{border-left:1px solid #fff}
+@media screen and (max-width:600px){.lp_block_footer ul li+li{border-width:0;padding-top:3.125vw}}
+.lp_block_footer p{text-align:center}
+.lp_block_footer a{color:#fff;text-decoration:none}
+.lp_block_footer a:hover{text-decoration:underline}
+
+.wave-divider{width:100%;overflow:hidden;line-height:0}
+.wave-divider svg{display:block;width:100%;height:60px}
+@media screen and (max-width:600px){.wave-divider svg{height:35px}}
+
+.lp_block_box{border:3px solid #192b60;border-radius:20px;overflow:hidden}
+@media screen and (max-width:600px){.lp_block_box{border-width:2px;border-radius:2.0833333333vw}}
+.lp_block_box+.lp_block_box{margin-top:20px}
+
+.lp_block_bg_navy{background-color:#4460b4}
+.lp_block_bg_blue{background-color:#f0f4f8}
+.lp_block_bg_yellow{background-color:#fffc95}
+
+h2{position:relative;font-size:40px;font-weight:700;color:#f96410;border:3px solid #192b60;background-color:#fff;border-radius:100000px;text-align:center;margin-inline:auto;padding:8px;width:100%;max-width:735px;margin-bottom:45px;letter-spacing:.05em}
+@media screen and (max-width:600px){h2{font-size:7.2916666667vw;border-width:2px;padding:2.0833333333vw;max-width:82.7083333333vw;margin-bottom:4.8958333333vw;line-height:1.3}}
+h2::before{content:"";position:absolute;bottom:-38px;left:50%;transform:translateX(-50%);border:24px solid transparent;border-top:24px solid #fff;z-index:2}
+@media screen and (max-width:600px){h2::before{bottom:-4.6875vw;border:3.125vw solid transparent;border-top:3.125vw solid #fff}}
+h2::after{content:"";position:absolute;bottom:-41px;left:50%;transform:translateX(-50%);border:24px solid transparent;border-top-color:#192b60;z-index:1}
+@media screen and (max-width:600px){h2::after{bottom:-5.2083333333vw;border:3.125vw solid transparent;border-top:3.125vw solid #192b60}}
+
+.sp{display:none}
+@media screen and (max-width:600px){.sp{display:block}}
+</style>
+
+  </head>
+  <body>
+    <main>
+
+      <!-- ===== FV ===== -->
+      <div class="lp_block lp_block_fv">
+        <picture>
+          <source srcset="images/fv_sp.png" media="(max-width: 600px)" />
+          <img src="images/fv.png" />
+        </picture>
+      </div>
+
+      <!-- ===== CTA① ===== -->
+      <div class="lp_block lp_block_form lp_block_form_first">
+        <p class="form-title"><span>続編の内容を知りたい方は、コチラのLINEを登録</span></p>
+        <p class="form-subtitle">※LINE登録後、無料セミナーの日程をお選びください</p>
+        <a href="https://lin.ee/f1OUNri" target="_blank" class="cta-line-btn">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><path d="M12 2C6.48 2 2 5.93 2 10.66c0 2.72 1.35 5.15 3.46 6.73.14.1.23.28.23.47l-.05 1.74c-.02.59.52 1.03 1.07.85l1.94-.65c.15-.05.31-.05.46-.01.94.26 1.94.4 2.99.4 5.52 0 10-3.93 10-8.66C22 5.93 17.52 2 12 2z"/></svg>
+          LINEで無料で受け取る
+        </a>
+        <small>※名前、住所、電話番号不要なので<br class="sp" />個人情報が漏れることもありません</small>
+      </div>
+
+      <!-- wave: 白→プロフィール灰 -->
+      <div class="wave-divider" style="background:#f0f4f8"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,0 L0,0 Z" fill="#fff"/></svg></div>
+
+      <!-- ===== 著者プロフィール ===== -->
+      <div class="lp_block_bg_blue">
+        <div class="lp_block lp_block_profile">
+          <h2>著者プロフィール</h2>
+          <div class="lp_block_profile_container">
+            <div class="lp_block_profile_item lp_block_profile_item_main">
+              <picture style="margin-bottom:40px">
+                <img src="https://ai-academy.jp/lp/model/images/prof01.png" alt="北村拓也" width="806" height="303" style="width:100%;max-width:100%;height:auto" />
+              </picture>
+              <p>広島大学工学部でプログラミングに出会い、在学中に連続起業。子ども向けプログラミングスクール「TechChance!」（全国20店舗以上展開）を共同創業。学習アプリ開発会社を設立し、後に売却。サイバーセキュリティ教育会社なども起業。</p>
+              <p>広島大学大学院工学研究科情報工学専攻学習工学研究室を飛び級で卒業し、博士号（工学）を取得。未踏事業への採択実績あり。広島大学の学長特任補佐を務め、現在は広島大学の特任助教として学生の起業支援に取り組むと共に、「実践的な」AI教育が日本の発展のために必要だと痛感し、北村式・AI実践アカデミーを立ち上げる。</p>
+              <p style="margin-bottom:0">これまで延べ5,000名以上を指導。自身の不登校経験を原点に「ゼロからでも人生は変えられる」というメッセージを発信し続けている。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- wave: プロフィール灰→経歴黄 -->
+      <div class="wave-divider" style="background:#fffc95"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,0 L0,0 Z" fill="#f0f4f8"/></svg></div>
+
+      <!-- ===== 経歴＆メディア ===== -->
+      <div class="lp_block_bg_yellow">
+        <div class="lp_block">
+          <h2>経歴＆メディア</h2>
+          <!-- 受賞歴 -->
+          <div class="lp_block_achievement_container">
+            <div class="lp_block_achievement_item"><img src="https://ai-academy.jp/lp/model/images/prof01_3_1.jpg" width="429" height="238" /></div>
+            <div class="lp_block_achievement_item"><img src="https://ai-academy.jp/lp/model/images/prof01_3_2.jpg" width="429" height="293" /></div>
+          </div>
+          <!-- 著書 -->
+          <div class="lp_block_achievement_row">
+            <img src="https://ai-academy.jp/lp/model/images/prof01_4_1.png" alt="著書一覧" width="830" height="184" />
+          </div>
+          <!-- メディア -->
+          <div class="lp_block_achievement_row" style="margin-top:20px">
+            <p style="text-align:center;font-size:20px;font-weight:700;margin-bottom:12px">全国紙にも掲載されました。</p>
+            <img src="https://ai-academy.jp/lp/model/images/prof01_5_1.png" alt="全国紙にも掲載されました" width="994" height="537" />
+          </div>
+          <!-- 外務省講演 -->
+          <div class="lp_block_achievement_row">
+            <p style="text-align:center;font-size:20px;font-weight:700;margin-bottom:12px">外務省からの依頼で、各国の若手政務官に講演</p>
+            <img src="https://ai-academy.jp/lp/model/images/prof01_6_1.jpg" alt="外務省からの依頼で各国の若手政務官に講演" width="760" height="308" />
+          </div>
+          <!-- 野田聖子氏との写真 -->
+          <div class="lp_block_achievement_row" style="margin-top:20px">
+            <p style="text-align:center;font-size:20px;font-weight:700;margin-bottom:12px">野田聖子 元総務大臣と</p>
+            <img src="https://ai-academy.jp/lp/model/images/prof01_6_2.jpg" alt="野田聖子 元総務大臣と" width="760" height="398" />
+          </div>
+        </div>
+      </div>
+
+      <!-- wave: 経歴黄→続編紺 -->
+      <div class="wave-divider" style="background:#4460b4"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,0 L0,0 Z" fill="#fffc95"/></svg></div>
+
+      <!-- ===== 続編の一部を公開 ===== -->
+      <div class="lp_block_bg_navy">
+        <div class="lp_block">
+          <h2>続編の一部を公開！</h2>
+          <div class="lp_block_details lp_block_box">
+            <div class="lp_block_details_item">
+              <div class="lp_block_details_text">
+                <h3><span>①</span><span>なぜ今、AIで不労所得が可能なのか</span></h3>
+                <ul>
+                  <li>2026年のAI革命がもたらした収益構造の変化</li>
+                  <li>個人がAIで月収10万〜50万円を作る現実的なルート</li>
+                  <li>経験・スキル・年齢がハンデにならない理由</li>
+                </ul>
+              </div>
+            </div>
+            <div class="lp_block_details_item">
+              <div class="lp_block_details_text">
+                <h3><span>②</span><span>「何を売るか」を見つける技術</span></h3>
+                <ul>
+                  <li>AIで市場のニーズ・競合・トレンドを自動分析する方法</li>
+                  <li>落ちこぼれ市場にこそチャンスがある</li>
+                  <li>あなたの経験を「売れるテーマ」に変換する思考法</li>
+                </ul>
+              </div>
+            </div>
+            <div class="lp_block_details_item">
+              <div class="lp_block_details_text">
+                <h3><span>③</span><span>AIで「売れる商品」を量産する</span></h3>
+                <ul>
+                  <li>電子書籍・動画教材・オンラインコースの自動生成</li>
+                  <li>プロンプト知識ゼロでも高品質なコンテンツを作る秘訣</li>
+                  <li>1冊の電子書籍を数時間で完成させるワークフロー</li>
+                </ul>
+              </div>
+            </div>
+            <div class="lp_block_details_item">
+              <div class="lp_block_details_text">
+                <h3><span>④</span><span>集客から販売を自動化する仕組み</span></h3>
+                <ul>
+                  <li>LP・SNS投稿・広告コピー・メールをAIで一括生成</li>
+                  <li>一度セットすれば寝ている間にも売れ続ける設計術</li>
+                  <li>自動化の全体像と具体的なツール連携</li>
+                </ul>
+              </div>
+            </div>
+            <div class="lp_block_details_item">
+              <div class="lp_block_details_text">
+                <h3><span>⑤</span><span>不労所得マシンを完成させる</span></h3>
+                <ul>
+                  <li>発見→制作→自動販売の3ステップ完全ガイド</li>
+                  <li>利益を再投資して収益を雪だるま式に増やす方法</li>
+                  <li>手を出してはいけない落とし穴と回避策</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- wave: 続編紺→白 -->
+      <div class="wave-divider" style="background:#fff"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,0 L0,0 Z" fill="#4460b4"/></svg></div>
+
+      <!-- ===== CTA② ===== -->
+      <div class="lp_block lp_block_form">
+        <p class="form-title"><span>続編の内容を知りたい方は、コチラのLINEを登録</span></p>
+        <p class="form-subtitle">※LINE登録後、無料セミナーの日程をお選びください</p>
+        <a href="https://lin.ee/f1OUNri" target="_blank" class="cta-line-btn">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><path d="M12 2C6.48 2 2 5.93 2 10.66c0 2.72 1.35 5.15 3.46 6.73.14.1.23.28.23.47l-.05 1.74c-.02.59.52 1.03 1.07.85l1.94-.65c.15-.05.31-.05.46-.01.94.26 1.94.4 2.99.4 5.52 0 10-3.93 10-8.66C22 5.93 17.52 2 12 2z"/></svg>
+          LINEで無料で受け取る
+        </a>
+        <small>※名前、住所、電話番号不要なので<br class="sp" />個人情報が漏れることもありません</small>
+      </div>
+
+      <!-- ===== MESSAGE ===== -->
+      <div class="lp_block_message_section">
+        <div class="message-card">
+          <div class="msg-heading">最後に一つだけ、<br>今お伝えしたい<em>"大切なこと"</em>が<br>あります。</div>
+
+          <p>AIの進化は、もう止まりません。<br>（毎日のように新しいサービスが生まれていますよね？）</p>
+
+          <p>でもこれは皆さんを不安にさせたいワケではなくて<br><strong>「人生を変える大チャンス」が目の前にやって来ている</strong>ということを<br>お伝えしたいのです。</p>
+
+          <p>AIと聞くと難しそうなイメージですが、<br>これは食わず嫌いです。</p>
+
+          <p><strong>AIを使えば、知識ゼロ・スキルゼロからでも<br>「自分の代わりに稼いでくれる仕組み」を作れる。</strong><br>その具体的な方法を、この続編ですべてお伝えしています。</p>
+
+          <p>何も怖がる必要はありません。</p>
+
+          <p><strong>私と一緒に、AIで「不労所得マシン」を<br>作ってみませんか？</strong></p>
+        </div>
+      </div>
+
+      <!-- wave: 緑メッセージ→FAQ緑 -->
+      <div class="wave-divider" style="background:#e6f5e8"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,0 L0,0 Z" fill="#e6f5e8"/></svg></div>
+
+      <!-- ===== FAQ ===== -->
+      <div class="lp_block_bg_green">
+        <div class="lp_block">
+          <h2>よくある質問</h2>
+          <div class="lp_block_faq lp_block_box">
+            <div class="lp_block_faq_question"><img src="https://h-toushibu.com/lps/0-files/book/assets/images/faq_icon.png" width="112" height="112" />AI初心者でも理解できる内容ですか？</div>
+            <p class="lp_block_faq_answer">はい、ご安心ください。本書は専門用語を使わず、初めてAIに触れる方でも一つずつ実践できるようステップバイステップで解説しています。実際に読者の多くが40〜60代でパソコンが得意でない方です。</p>
+          </div>
+          <div class="lp_block_faq lp_block_box">
+            <div class="lp_block_faq_question"><img src="https://h-toushibu.com/lps/0-files/book/assets/images/faq_icon.png" width="112" height="112" />他のAI副業の書籍との違いは何ですか？</div>
+            <p class="lp_block_faq_answer">著者の北村は工学博士であり、延べ5,000名以上を指導してきた実績があります。続編では学術的な裏付けと実際に成果を出した受講生の事例を交えながら、再現性の高いノウハウを公開しています。机上の空論ではなく「実践して結果が出る」内容です。</p>
+          </div>
+          <div class="lp_block_faq lp_block_box">
+            <div class="lp_block_faq_question"><img src="https://h-toushibu.com/lps/0-files/book/assets/images/faq_icon.png" width="112" height="112" />本当に無料ですか？</div>
+            <p class="lp_block_faq_answer">はい、完全に無料です。LINEで友だち追加をしていただくだけで、続編の内容をすべてお受け取りいただけます。個人情報の入力も不要ですので、安心してご登録ください。</p>
+          </div>
+          <div class="lp_block_faq lp_block_box">
+            <div class="lp_block_faq_question"><img src="https://h-toushibu.com/lps/0-files/book/assets/images/faq_icon.png" width="112" height="112" />副業に興味があるわけではないのですが…</div>
+            <p class="lp_block_faq_answer">副業に限らず、本書で紹介するAI活用の仕組みは、業務効率化や新しいスキル習得にもそのまま応用できます。「AIで何ができるのか知りたい」「仕事をもっとラクにしたい」という方にもお役立ていただける内容です。</p>
+          </div>
+          <div class="lp_block_faq lp_block_box">
+            <div class="lp_block_faq_question"><img src="https://h-toushibu.com/lps/0-files/book/assets/images/faq_icon.png" width="112" height="112" />登録後、しつこい勧誘はありませんか？</div>
+            <p class="lp_block_faq_answer">ございません。お届けするのは書籍の続編と、あなたのお役に立つ情報のみです。配信が不要になった場合は、いつでもブロック（配信解除）していただけます。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- wave: FAQ緑→白 -->
+      <div class="wave-divider" style="background:#fff"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,0 1440,60 L1440,0 L0,0 Z" fill="#e6f5e8"/></svg></div>
+
+      <!-- ===== CTA③（LAST） ===== -->
+      <div class="lp_block lp_block_form lp_block_form_last">
+        <p class="form-title"><span>続編の内容を知りたい方は、コチラのLINEを登録</span></p>
+        <p class="form-subtitle">※LINE登録後、無料セミナーの日程をお選びください</p>
+        <a href="https://lin.ee/f1OUNri" target="_blank" class="cta-line-btn">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff"><path d="M12 2C6.48 2 2 5.93 2 10.66c0 2.72 1.35 5.15 3.46 6.73.14.1.23.28.23.47l-.05 1.74c-.02.59.52 1.03 1.07.85l1.94-.65c.15-.05.31-.05.46-.01.94.26 1.94.4 2.99.4 5.52 0 10-3.93 10-8.66C22 5.93 17.52 2 12 2z"/></svg>
+          LINEで無料で受け取る
+        </a>
+        <small>※名前、住所、電話番号不要なので<br class="sp" />個人情報が漏れることもありません</small>
+      </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="lp_block lp_block_footer">
+        <ul>
+          <li><a href="https://ai-academy.jp/si-2/form/toku.html" target="_blank">特定商取引法に基づく表記</a></li>
+          <li><a href="https://ai-academy.jp/si-2/form/praivacy.html" target="_blank">プライバシーポリシー</a></li>
+        </ul>
+        <p><small>&copy; 2026 北村式AI実践アカデミー</small></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
